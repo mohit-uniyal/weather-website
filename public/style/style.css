@@ -127,6 +127,7 @@ a{
     white-space: nowrap;
     overflow: hidden;
     font-size: 0;
+    scroll-behavior: smooth;
 }
 
 .carousel img{
