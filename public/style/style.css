@@ -144,3 +144,25 @@ a{
     padding: 15px 0;
     text-align: center;
 }
+
+/* responsive */
+
+@media (max-width: 900px) {
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    .main-text-box{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .main-image-box{
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px){
+    .main-image-box{
+        width: 100%;
+    }
+}
