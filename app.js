@@ -3,18 +3,19 @@ const path = require('path');
 const app=express();
 const PORT=3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'hbs');
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', (req, res) =>{
-    res.send("home page");
+    res.render("index");
 })
 
 app.get('/about', (req, res)=>{
-    res.send("about page");
+    res.render("about");
 })
 
 app.get('/weather', (req, res)=>{
-    res.send("weather page");
+    res.render("weather");
 })
 
 app.get('*', (req, res)=>{
