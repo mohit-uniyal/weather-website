@@ -55,6 +55,7 @@ a{
     justify-content: space-between;
     column-gap: 10px;
     padding: 15px 10px;
+    position: relative;
 }
 
 
@@ -72,6 +73,10 @@ a{
 
 .logo, .navigation-links > li{
     margin: 5px 0;
+}
+
+#nav-toggle{
+    display: none;
 }
 
 /* main content */
@@ -164,5 +169,34 @@ a{
 @media (max-width: 550px){
     .main-image-box{
         width: 100%;
+    }
+}
+
+@media (max-width: 460px){
+    .main-content{
+        padding: 10px 5px;
+    }
+    #nav-toggle{
+        display: block;
+        font-size: 1.2rem;
+        position: relative;
+        top: 0.3rem;
+    }
+    .navigation-links{
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--primary-color);
+        z-index: 1;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s ease-out;
+    }
+    .active{
+        left: 0;
+    }
+    .carousel img{
+        height: 300px;
     }
 }
