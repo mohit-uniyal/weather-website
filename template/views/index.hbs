@@ -5,28 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MohitWeather</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/396cfbcfcf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-content container">
-            <div class="logo">
-                <i class="fa-solid fa-snowflake fa-spin" style="color: #3457d5;"></i>
-                <a href="#">MohitWeather</a>
-                <i class="fa-solid fa-snowflake fa-spin" style="color: #3457d5"></i>
-            </div>
-            <ul class="navigation-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Weather</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <i class="fa-solid fa-bars nav-toggle" id='nav-toggle'style="color: #fcfcfc;"></i>
-        </div>
-    </nav>
-
+    
+    {{>navbar}}
 
     <main>
         <div class="container main-content">
@@ -47,9 +33,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer">created with ❣️ by Mohit Uniyal</div>
-    </footer>
+    {{>footer}}
+
     <script src="script/script.js"></script>
 </body>
 
