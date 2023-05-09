@@ -1,0 +1,40 @@
+
+.about-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-main-cover-photo{
+    width: 48%;
+}
+
+.about-main-cover-photo img{
+    width: 100%;
+}
+
+.about-main-content{
+    width: 48%;
+}
+
+.about-main-text{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.about-main-text span{
+    color: var(--secondary-color);
+}
+
+@media (max-width: 550px) {
+    .about-main{
+        flex-direction: column;
+    }
+    .about-main-cover-photo{
+        width: 100%;
+    }
+    .about-main-content{
+        width: 100%;
+        text-align: center;
+    }
+}

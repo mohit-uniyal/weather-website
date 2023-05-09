@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/about-style.css">
     <script src="https://kit.fontawesome.com/396cfbcfcf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     {{>navbar}}
+
+    <main>
+        <div class="about-main container">
+            <div class="about-main-cover-photo">
+                <img src="images/about-page-image.png" alt="img">
+            </div>
+            <div class="about-main-content">
+                <h1 class="about-main-text">
+                    I like to do <span>DSA</span> and <span>Web Development</span>
+                </h1>
+                <a href="https://www.linkedin.com/in/mohit-uniyal7/" target="_blank"><button class="primary-btn">CHECK NOW</button></a>
+            </div>
+        </div>
+    </main>
 
     {{>footer}}
     <script src="script/script.js"></script>
