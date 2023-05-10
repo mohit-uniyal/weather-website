@@ -2,6 +2,8 @@ const submitBtn = document.querySelector('#search-btn');
 const city = document.querySelector('#input-city');
 const displayCity=document.querySelector('#city-name');
 const displayTemperature=document.querySelector('#city-temperature');
+const presentDay=document.querySelector('#day');
+const presentDate=document.querySelector('#date');
 
 const getInfo = async (event) => {
     event.preventDefault();
@@ -38,3 +40,23 @@ const getInfo = async (event) => {
 
 submitBtn.addEventListener('click', getInfo);
 
+function getDate(){
+    return new Date().getDate();
+}
+
+function getDay(){
+    let dayMap=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', ];
+    return dayMap[new Date().getDay()];
+}
+
+function getMonth(){
+    let monthMap=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    return monthMap[new Date().getMonth()];
+}
+
+let date=getDate();
+let day=getDay();
+let month=getMonth();
+
+presentDay.innerText=day;
+presentDate.innerText=date+" "+month;
