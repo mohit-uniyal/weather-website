@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/weather-style.css">
     <script src="https://kit.fontawesome.com/396cfbcfcf.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     {{>navbar}}
 
+    <main>
+        <div class="main-weather-content container">
+            <div class="input-box-content">
+                <div class="input-box">
+                    <input type="text" name="" id="input-city" placeholder="Enter your City name..." autocomplete="off">
+                    <button type="submit" id="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="present-day-data">
+                    <span id="day">Wednesday</span>
+                    <span class="date">10 may</span>
+                </div>
+                <div class="temp-city-info">
+                    <p id="city-name">Info will be shown here</p>
+                    <p id="city-temperature"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
     {{>footer}}
     <script src="script/navigation-control.js"></script>
+    <script src="script/weather-main.js"></script>
 </body>
+
 </html>
