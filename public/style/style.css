@@ -41,6 +41,10 @@ a{
     box-shadow: 0 4px 9px -1px grey;
 }
 
+.primary-btn:hover{
+    box-shadow: 0 4px 9px -1px var(--secondary-color);
+}
+
 /* navigation bar */
 .navbar{
     background-color: var(--primary-color);
