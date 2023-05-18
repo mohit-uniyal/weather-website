@@ -7,7 +7,7 @@ const presentDate=document.querySelector('#date');
 
 const getInfo = async (event) => {
     event.preventDefault();
-    let cityName = city.value.replaceAll(" ", "");
+    let cityName = city.value.trim();
     if (cityName == "") {
         displayCity.innerText="city name cannot be blank";
         displayTemperature.innerText="";
